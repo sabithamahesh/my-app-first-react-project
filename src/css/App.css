@@ -24,6 +24,7 @@
   color: white;
 }
 
+/* Styling for page links */
 .activeHome {
   color: salmon; 
   font-size: 20px;
@@ -48,12 +49,14 @@
   font-weight: bold;
 }
 
+/* Styling for image in each page */
 .Description-Image {
   max-width: 400px;
   width: 100%;
   height: auto;
 }
 
+/* background color for header with links to pages */
 nav {
   background-color: rgb(248, 223, 140);
 }

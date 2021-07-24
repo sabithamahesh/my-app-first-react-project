@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useHistory,
   NavLink
 } from 'react-router-dom';
 
@@ -18,6 +17,7 @@ export default function App() {
       <div>
         <nav>
           <ul>
+            {/* Added nav links and styled them in stylesheet */}
             <li>
             <NavLink to="/home" activeClassName="activeHome">Home</NavLink>
             </li>
@@ -60,20 +60,6 @@ export default function App() {
   );
 }
 
-
-function HomeButton() {
-  let history = useHistory();
-
-  function handleClick() {
-    history.push("/home");
-  }
-
-  return (
-    <button type="button" onClick={handleClick}>
-      Go home
-    </button>
-  );
-}
 
 
 
