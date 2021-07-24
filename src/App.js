@@ -3,12 +3,14 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  useHistory,
+  NavLink
 } from 'react-router-dom';
 
 import Home from './Pages/Home';
-import Users from './Pages/Users';
+import Projects from './Pages/Projects';
 import About from './Pages/About';
+import Contact from './Pages/Contact';
 
 export default function App() {
   return (
@@ -17,26 +19,34 @@ export default function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+            <NavLink to="/home" activeClassName="activeHome">Home</NavLink>
             </li>
             <li>
-              <Link to="/about">About</Link>
+            <NavLink to="/about" activeClassName="activeAbout">About</NavLink>
             </li>
             <li>
-              <Link to="/users">Users</Link>
+            <NavLink to="/projects" activeClassName="activeProjects">Projects</NavLink>
+            </li>
+            <li>
+            <NavLink to="/contact" activeClassName="activeContact">Contact</NavLink>
             </li>
           </ul>
         </nav>
 
         {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+        renders the first one that matches the current URL. */}
+
         <Switch>
           <Route path="/about">
            <About />
 
           </Route>
-          <Route path="/users">
-           <Users />
+          <Route path="/projects">
+           <Projects />
+
+          </Route>
+          <Route path="/contact">
+           <Contact />
 
           </Route>
           <Route path="/">
@@ -47,6 +57,21 @@ export default function App() {
       </div>
     </Router>
       
+  );
+}
+
+
+function HomeButton() {
+  let history = useHistory();
+
+  function handleClick() {
+    history.push("/home");
+  }
+
+  return (
+    <button type="button" onClick={handleClick}>
+      Go home
+    </button>
   );
 }
 

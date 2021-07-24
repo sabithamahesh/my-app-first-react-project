@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
@@ -23,6 +23,41 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.activeHome {
+  color: salmon; 
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.activeAbout{
+  color: salmon; 
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.activeProjects {
+  color: salmon; 
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.activeContact {
+  color: salmon; 
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Description-Image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  background-color: rgb(248, 223, 140);
+}
+
 
 .App-link {
   color: #61dafb;
