@@ -1,4 +1,4 @@
-import logo from './../images/logo.svg';
+import logo from './../Images/logo.svg';
 import './../css/App.css';
 
 export default function Users() {

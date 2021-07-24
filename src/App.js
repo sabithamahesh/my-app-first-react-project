@@ -6,9 +6,9 @@ import {
   Link
 } from 'react-router-dom';
 
-import Home from './page/Home';
-import Users from './page/Users';
-import About from './page/About';
+import Home from './Pages/Home';
+import Users from './Pages/Users';
+import About from './Pages/About';
 
 export default function App() {
   return (

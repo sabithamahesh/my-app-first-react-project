@@ -1,13 +1,13 @@
-import logo from './../images/logo.svg';
+import logo from './../Images/logo.svg';
 import './../css/App.css';
 
-export default function About() {
+export default function Home() {
   return (
-    <div className="App about">
+    <div className="App home">
       <header className="App-header">
       <img src={logo} className="App-logo" alt="logo" />
       <p>
-      ABOUT Component Edit <code>src/App.js</code> and save to reload.
+      Home Edit <code>src/App.js</code> and save to reload.
       </p>
       <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
       Learn React
